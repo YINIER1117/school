@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>愛與關懷慈善公會</title>
+    <!-- 引入 Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入 Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa; /* 淺灰色背景 */
+            color: #333;
+        }
+        .hero-section {
+            background-image: url('https://placehold.co/1920x600/a0c49d/ffffff?text=Caring+Hands'); /* 溫暖的背景圖 */
+            background-size: cover;
+            background-position: center;
+        }
+        .section-padding {
+            padding: 4rem 0;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- 導覽列 (Navbar) -->
+    <header class="bg-white shadow-md py-4 sticky top-0 z-50 rounded-b-xl">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <!-- Logo 區塊 -->
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <!-- 這裡可以使用公會的實際 Logo 圖片 -->
+                <img src="https://placehold.co/60x60/83c5be/ffffff?text=Logo" alt="愛與關懷慈善公會 Logo" class="h-12 w-12 rounded-full shadow-lg">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-emerald-700">愛與關懷慈善公會</span>
+            </a>
+            <!-- 導覽連結 -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-700 hover:text-emerald-600 font-medium transition duration-300 ease-in-out rounded-lg px-3 py-2">首頁</a>
+                <a href="#about" class="text-gray-700 hover:text-emerald-600 font-medium transition duration-300 ease-in-out rounded-lg px-3 py-2">關於我們</a>
+                <a href="#services" class="text-gray-700 hover:text-emerald-600 font-medium transition duration-300 ease-in-out rounded-lg px-3 py-2">服務項目</a>
+                <a href="#talent" class="text-gray-700 hover:text-emerald-600 font-medium transition duration-300 ease-in-out rounded-lg px-3 py-2">人才培育</a>
+                <a href="#news" class="text-gray-700 hover:text-emerald-600 font-medium transition duration-300 ease-in-out rounded-lg px-3 py-2">最新消息</a>
+                <a href="#contact" class="text-gray-700 hover:text-emerald-600 font-medium transition duration-300 ease-in-out rounded-lg px-3 py-2">聯絡我們</a>
+            </nav>
+            <!-- 手機版選單按鈕 (未來可加入 JavaScript 實現展開/收合) -->
+            <button class="md:hidden text-gray-700 hover:text-emerald-600 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- 首頁英雄區塊 (Hero Section) -->
+        <section id="home" class="hero-section text-white text-center py-20 lg:py-32 rounded-b-3xl shadow-xl">
+            <div class="container mx-auto px-4 max-w-4xl bg-black bg-opacity-40 p-8 rounded-xl shadow-lg">
+                <h1 class="text-4xl lg:text-6xl font-extrabold mb-6 leading-tight drop-shadow-lg">
+                    愛與關懷，點亮生命希望
+                </h1>
+                <p class="text-lg lg:text-xl mb-8 leading-relaxed">
+                    我們致力於為長期照護需求者提供溫暖與專業的服務，
+                    攜手政府與機構，共同打造友善的照護環境。
+                </p>
+                <a href="#services" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                    了解我們的服務
+                </a>
+            </div>
+        </section>
+
+        <!-- 關於我們區塊 (About Us) -->
+        <section id="about" class="bg-gray-50 section-padding rounded-xl shadow-inner mt-12 mx-auto max-w-7xl px-4">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold text-emerald-800 mb-6 relative">
+                    關於我們
+                    <span class="absolute left-1/2 transform -translate-x-1/2 bottom-[-10px] w-20 h-1 bg-emerald-500 rounded"></span>
+                </h2>
+                <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
+                    愛與關懷慈善公會自成立以來，始終秉持著「以人為本，溫暖照護」的宗旨。我們深耕長期照護領域，
+                    旨在為失能、失智及高齡長者提供全方位的支持與陪伴。
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2">
+                        <div class="text-emerald-500 mb-4">
+                            <svg class="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">我們的願景</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            建立一個無障礙、充滿愛與尊嚴的長期照護網絡，讓每一位需要幫助的人都能安享晚年。
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2">
+                        <div class="text-emerald-500 mb-4">
+                            <svg class="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">我們的使命</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            透過專業照護、資源整合及人才培育，提升長期照護服務品質，減輕家庭負擔。
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2">
+                        <div class="text-emerald-500 mb-4">
+                            <svg class="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">我們的核心價值</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            愛心、專業、責任、創新，是我們服務社會的基石。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 服務項目區塊 (Services) -->
+        <section id="services" class="section-padding bg-emerald-50 rounded-xl shadow-inner mt-12 mx-auto max-w-7xl px-4">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold text-emerald-800 mb-6 relative">
+                    服務項目
+                    <span class="absolute left-1/2 transform -translate-x-1/2 bottom-[-10px] w-20 h-1 bg-emerald-500 rounded"></span>
+                </h2>
+                <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
+                    我們提供多元化的長期照護服務，以滿足不同家庭的需求。
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2">
+                        <div class="text-emerald-500 mb-4">
+                            <svg class="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">個案管理與諮詢</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            專業社工師提供個別化的需求評估、服務計畫擬定與資源連結。
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2">
+                        <div class="text-emerald-500 mb-4">
+                            <svg class="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">居家照顧服務</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            協助身體清潔、膳食準備、翻身拍背等日常生活照顧。
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2">
+                        <div class="text-emerald-500 mb-4">
+                            <svg class="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">喘息服務</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            提供主要照顧者短暫休息的機會，減輕照護壓力。
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2">
+                        <div class="text-emerald-500 mb-4">
+                            <svg class="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">社區日間照顧</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            提供長者日間活動、復健、餐飲等服務，豐富生活。
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2">
+                        <div class="text-emerald-500 mb-4">
+                            <svg class="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">輔具租借與評估</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            協助申請及選擇適合的輔具，提升生活自理能力。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 人才培育區塊 (Talent Cultivation) -->
+        <section id="talent" class="section-padding bg-gray-50 rounded-xl shadow-inner mt-12 mx-auto max-w-7xl px-4">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold text-emerald-800 mb-6 relative">
+                    人才培育與政府合作
+                    <span class="absolute left-1/2 transform -translate-x-1/2 bottom-[-10px] w-20 h-1 bg-emerald-500 rounded"></span>
+                </h2>
+                <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
+                    為提升長期照護服務品質，我們積極與政府合作，共同推動專業人才的培育與訓練。
+                </p>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-10 items-center">
+                    <div class="text-left bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">政府合作計畫</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            近幾年來，愛與關懷慈善公會與政府部門緊密合作，共同規劃並執行一系列長期照護人才培訓專案。這些計畫旨在提升照護人員的專業技能與服務品質，以應對社會對長期照護日益增長的需求。
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>共同開發照護課程與教材</li>
+                            <li>舉辦專業技能認證與培訓</li>
+                            <li>提供實習機會與職涯輔導</li>
+                            <li>推動國際照護經驗交流</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/600x400/98d8c6/ffffff?text=Talent+Cultivation" alt="人才培育計畫" class="rounded-xl shadow-lg mx-auto w-full max-w-md lg:max-w-none">
+                    </div>
+                </div>
+                <div class="mt-12">
+                    <h3 class="text-3xl font-bold text-emerald-700 mb-6">我們的培育目標</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-3">專業技能</h4>
+                            <p class="text-gray-600">
+                                培養具備最新照護知識與實務技能的專業人員。
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-3">人文關懷</h4>
+                            <p class="text-gray-600">
+                                強化照護者的同理心與倫理觀，提供有溫度的服務。
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-3">創新發展</h4>
+                            <p class="text-gray-600">
+                                鼓勵照護模式創新，提升服務效率與品質。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 最新消息區塊 (News & Events) -->
+        <section id="news" class="section-padding bg-emerald-50 rounded-xl shadow-inner mt-12 mx-auto max-w-7xl px-4">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold text-emerald-800 mb-6 relative">
+                    最新消息與活動
+                    <span class="absolute left-1/2 transform -translate-x-1/2 bottom-[-10px] w-20 h-1 bg-emerald-500 rounded"></span>
+                </h2>
+                <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
+                    即時更新公會的最新動態、活動資訊與相關政策消息。
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+                    <!-- 消息卡片範例 1 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                        <img src="https://placehold.co/400x250/cce3de/ffffff?text=News+1" alt="消息圖片" class="rounded-lg mb-4 w-full">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">【活動】2025年長期照護人員培訓班開始報名！</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            2025年6月15日
+                        </p>
+                        <p class="text-gray-700 leading-relaxed text-sm">
+                            公會與衛福部合作舉辦的專業培訓班即將開課，歡迎有志者報名參加。
+                        </p>
+                        <a href="#" class="text-emerald-600 hover:text-emerald-800 mt-4 inline-block font-medium">了解更多 &rarr;</a>
+                    </div>
+                    <!-- 消息卡片範例 2 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                        <img src="https://placehold.co/400x250/cce3de/ffffff?text=News+2" alt="消息圖片" class="rounded-lg mb-4 w-full">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">【政策】長照2.0新制上路說明會</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            2025年5月30日
+                        </p>
+                        <p class="text-gray-700 leading-relaxed text-sm">
+                            為協助民眾了解長照2.0最新政策，公會將舉辦多場說明會。
+                        </p>
+                        <a href="#" class="text-emerald-600 hover:text-emerald-800 mt-4 inline-block font-medium">了解更多 &rarr;</a>
+                    </div>
+                    <!-- 消息卡片範例 3 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                        <img src="https://placehold.co/400x250/cce3de/ffffff?text=News+3" alt="消息圖片" class="rounded-lg mb-4 w-full">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">【報導】愛與關懷公會攜手社區共創溫馨照護</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            2025年5月10日
+                        </p>
+                        <p class="text-gray-700 leading-relaxed text-sm">
+                            媒體報導公會深耕社區，與居民共同打造友善照護環境的成果。
+                        </p>
+                        <a href="#" class="text-emerald-600 hover:text-emerald-800 mt-4 inline-block font-medium">了解更多 &rarr;</a>
+                    </div>
+                </div>
+                <div class="mt-12">
+                    <a href="#" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                        查看所有消息
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 聯絡我們區塊 (Contact Us) -->
+        <section id="contact" class="section-padding bg-gray-50 rounded-xl shadow-inner mt-12 mx-auto max-w-7xl px-4">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold text-emerald-800 mb-6 relative">
+                    聯絡我們
+                    <span class="absolute left-1/2 transform -translate-x-1/2 bottom-[-10px] w-20 h-1 bg-emerald-500 rounded"></span>
+                </h2>
+                <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
+                    如果您對我們的服務有任何疑問或建議，歡迎隨時與我們聯繫。
+                </p>
+                <div class="flex flex-col lg:flex-row gap-10 mt-10 justify-center items-start">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg flex-1 max-w-md w-full">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-6">聯絡資訊</h3>
+                        <ul class="text-left text-gray-700 space-y-4 text-lg">
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-emerald-500 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                                <strong>地址：</strong>臺南市中西區成功路123號 (範例地址)
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-emerald-500 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.46.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                                <strong>電話：</strong>(06) 123-4567 (範例電話)
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-emerald-500 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                                <strong>Email：</strong>info@loveandcare.org.tw (範例信箱)
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg flex-1 max-w-md w-full">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-6">意見回饋</h3>
+                        <form class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 text-sm font-bold mb-2 text-left">您的姓名</label>
+                                <input type="text" id="name" name="name" class="shadow appearance-none border rounded-xl w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent" placeholder="請輸入您的姓名">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 text-sm font-bold mb-2 text-left">您的Email</label>
+                                <input type="email" id="email" name="email" class="shadow appearance-none border rounded-xl w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent" placeholder="請輸入您的Email">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-gray-700 text-sm font-bold mb-2 text-left">您的訊息</label>
+                                <textarea id="message" name="message" rows="5" class="shadow appearance-none border rounded-xl w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent" placeholder="請輸入您的訊息"></textarea>
+                            </div>
+                            <button type="submit" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out w-full">
+                                送出訊息
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 頁腳 (Footer) -->
+    <footer class="bg-emerald-800 text-white py-8 mt-12 rounded-t-xl">
+        <div class="container mx-auto text-center px-4">
+            <p>&copy; 2025 愛與關懷慈善公會. 版權所有.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="text-white hover:text-emerald-300 transition duration-300 ease-in-out">
+                    <!-- Facebook Icon (可使用 Font Awesome 或 SVG) -->
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0H5C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5V5c0-2.761-2.239-5-5-5zm-3 7h-2v3h2v2h-2v6h-3v-6H8V7h3V5c0-1.657 1.343-3 3-3h3v3h-3v2z"/></svg>
+                </a>
+                <a href="#" class="text-white hover:text-emerald-300 transition duration-300 ease-in-out">
+                    <!-- Instagram Icon (可使用 Font Awesome 或 SVG) -->
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7.5 2C4.467 2 2 4.467 2 7.5v9C2 19.533 4.467 22 7.5 22h9c3.033 0 5.5-2.467 5.5-5.5v-9C22 4.467 19.533 2 16.5 2h-9zM12 6.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zm6.5-1.5c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5-1.5-.672-1.5-1.5.672-1.5 1.5-1.5zm-6.5 3a4 4 0 110 8 4 4 0 010-8z"/></svg>
+                </a>
+                <a href="#" class="text-white hover:text-emerald-300 transition duration-300 ease-in-out">
+                    <!-- Line Icon (可使用 SVG) -->
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zM6 9.5c0-.828.672-1.5 1.5-1.5S9 8.672 9 9.5c0 .828-.672 1.5-1.5 1.5S6 10.328 6 9.5zm9 0c0-.828.672-1.5 1.5-1.5S18 8.672 18 9.5c0 .828-.672 1.5-1.5 1.5S15 10.328 15 9.5zm-5.5 7.5c-2.484 0-4.5-2.016-4.5-4.5h2c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5h2c0 2.484-2.016 4.5-4.5 4.5z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
