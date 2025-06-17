@@ -67,7 +67,11 @@ header a:hover {
 
 /* Hero Section */
 .hero {
-    background: #007bff; /* Brighter blue for hero */
+    background: url(http://googleusercontent.com/image_generation_content/0); /* Add background image */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    background-blend-mode: multiply; /* Blend with a color */
+    background-color: rgba(0, 123, 255, 0.7); /* Overlay color for better text readability */
     color: #fff;
     text-align: center;
     padding: 100px 0;
