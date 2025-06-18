@@ -1,17 +1,30 @@
-// You can add JavaScript here for things like:
-// - Smooth scrolling for navigation links
-// - Simple form validation (though server-side validation is crucial for security)
-// - Animations or interactive elements
+document.addEventListener('DOMContentLoaded', function() {
+    const navToggle = document.querySelector('.nav-toggle');
+    const mainNav = document.getElementById('main-nav');
+    const navLinks = document.querySelectorAll('.main-nav ul li a');
 
-document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+    // Toggle navigation menu for mobile
+    navToggle.addEventListener('click', function() {
+        mainNav.classList.toggle('active');
+    });
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+    // Close mobile nav when a link is clicked
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            if (mainNav.classList.contains('active')) {
+                mainNav.classList.remove('active');
+            }
+        });
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
         });
     });
 });
-
-// Example: Simple console log when the page loads
-console.log("愛與關懷慈善公會 網站已載入！");
