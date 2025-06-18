@@ -1,34 +1,162 @@
-
-<html lang="zh-Hant">
+<!DOCTYPE html>
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>愛與關懷慈善公會 - 您的長期照護夥伴</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts - Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        /* Custom styles for hero section if needed, but Tailwind should handle most */
-        .hero {
-            background-image: url('https://placehold.co/1200x600/6A6B83/FFFFFF?text=Compassion+and+Care'); /* Placeholder image */
-            background-size: cover;
-            background-position: center;
-        }
-        /* Basic responsive adjustments */
-        @media (max-width: 768px) {
-            .container {
-                padding-left: 1rem;
-                padding-right: 1rem;
-            }
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-            nav ul li {
-                margin-bottom: 0.5rem;
-            }
-        }
+    <title>愛與關懷慈善公會 - 為長期照護而生</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="#">愛與關懷慈善公會</a></h1>
+            </div>
+            <nav class="main-nav" id="main-nav">
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul>
+                    <li><a href="#about">關於我們</a></li>
+                    <li><a href="#services">服務項目</a></li>
+                    <li><a href="#collaboration">合作夥伴</a></li>
+                    <li><a href="#talent-cultivation">人才培育</a></li>
+                    <li><a href="#contact">聯絡我們</a></li>
+                    <li><a href="#donate" class="btn btn-donate">立即捐款</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h2>點亮生命，溫暖每一個角落</h2>
+                <p>我們致力於為需要長期照護的人群提供最專業、最溫馨的服務，讓愛與關懷無遠弗屆。</p>
+                <a href="#services" class="btn btn-primary">了解我們的服務</a>
+            </div>
+        </section>
+
+        <section id="about" class="section-padding">
+            <div class="container">
+                <h2>關於我們</h2>
+                <div class="about-content">
+                    <p>愛與關懷慈善公會成立於20XX年，秉持著「服務社會，回饋人群」的宗旨，多年來深耕於長期照護領域。我們深知長期照護對個人與家庭的重要性，因此我們不僅提供生活上的協助，更著重於心靈上的支持與陪伴。</p>
+                    <p>我們的團隊由經驗豐富的護理師、社工師、照服員及志工組成，透過專業的知識和無私的奉獻，為每一位受服務者帶來有尊嚴、有品質的晚年生活。我們相信，每一個生命都值得被珍惜與照護。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section-padding bg-light">
+            <div class="container">
+                <h2>服務項目</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <h3>居家照護</h3>
+                        <p>提供專業護理、身體清潔、飲食照護、陪同就醫等一對一居家服務。</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>日間照顧</h3>
+                        <p>為長輩提供社區化的日間活動、餐飲、復健等服務，豐富生活。</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>喘息服務</h3>
+                        <p>減輕家庭照顧者的壓力，提供短期替代照護，讓照顧者獲得休息。</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>醫療諮詢與轉介</h3>
+                        <p>與專業醫療機構合作，提供健康諮詢與必要的醫療轉介服務。</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>心理支持與陪伴</h3>
+                        <p>透過志工探訪、團體活動，提供心靈上的慰藉與情感支持。</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>輔具申請協助</h3>
+                        <p>協助長輩及家屬了解並申請政府提供的長照輔具補助。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="collaboration" class="section-padding">
+            <div class="container">
+                <h2>合作夥伴</h2>
+                <p>愛與關懷慈善公會積極與政府機關及各類長期照護機構保持緊密合作，共同建構完善的長照網絡。</p>
+                <div class="collaboration-list">
+                    <ul>
+                        <li><i class="fas fa-handshake"></i> 衛生福利部長期照顧司</li>
+                        <li><i class="fas fa-handshake"></i> 各縣市政府社會局</li>
+                        <li><i class="fas fa-handshake"></i> 財團法人長期照顧服務發展基金會</li>
+                        <li><i class="fas fa-handshake"></i> 全台各大醫院附設護理之家</li>
+                        <li><i class="fas fa-handshake"></i> 社區型C級巷弄長照站</li>
+                    </ul>
+                    <p>透過多方合作，我們能夠更有效地整合資源，擴大服務範圍，為更多有需要的家庭提供及時且多元的協助。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="talent-cultivation" class="section-padding bg-light">
+            <div class="container">
+                <h2>人才培育計畫</h2>
+                <p>近幾年，為響應政府長照2.0政策，本公會與政府合作推動專業人才培育計畫，旨在提升照護品質並補充人力。</p>
+                <div class="cultivation-content">
+                    <p>我們開設多元化的課程，包括：</p>
+                    <ul>
+                        <li><i class="fas fa-graduation-cap"></i> **初級照顧服務員訓練**：基礎照護技能與倫理。</li>
+                        <li><i class="fas fa-graduation-cap"></i> **長期照護專業人員在職訓練**：針對現有照服員的技能提升與新知學習。</li>
+                        <li><i class="fas fa-graduation-cap"></i> **高階個案管理師培訓**：培養具備跨領域整合能力的個案管理師。</li>
+                        <li><i class="fas fa-graduation-cap"></i> **長期照護志工培訓**：提升志工服務的專業性與同理心。</li>
+                    </ul>
+                    <p>我們相信，透過持續的人才培育，能為台灣的長期照護產業注入新的活力，提供更優質、更人性化的服務。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-padding">
+            <div class="container">
+                <h2>聯絡我們</h2>
+                <p>如果您有任何疑問、合作提案或需要協助，請隨時與我們聯繫。</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> 地址：台南市中西區OO路XXX號</p>
+                    <p><i class="fas fa-phone-alt"></i> 電話：(06) XXXX-XXXX</p>
+                    <p><i class="fas fa-envelope"></i> 電子郵件：info@lovecare.org.tw</p>
+                    <p><i class="fas fa-clock"></i> 服務時間：週一至週五 09:00 - 17:00</p>
+                </div>
+                <div class="contact-form">
+                    <h3>寫信給我們</h3>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">姓名：</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">電子郵件：</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">主旨：</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">訊息：</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">送出訊息</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 愛與關懷慈善公會. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
